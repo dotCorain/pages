@@ -1,0 +1,20 @@
+site_name: pages
+site_url: https://fleetinglore.github.io/pages/
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js
+  - javascripts/katex-init.js
