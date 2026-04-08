@@ -1,4 +1,32 @@
-本文介绍 Web Collections 的一种布置方法,即布置到一个 GitHub 存储库的 Pages,但这并不是唯一的布置方法.
+一个 Web Collections 页面包含文本和链接.
+
+文本,正常写就行.
+
+链接,语法如下
+
+```lore
+link display name | link url
+```
+
+例如
+
+```lore
+example link | https://www.example.com
+```
+
+这样的页面也可以互相引用,简化语法如下
+
+```lore
+example target = target
+```
+
+渲染时,工具会根据配置文件的 `link_base` 的值,作前置路径拼接.
+
+例如 `link_base = "https://xxx"`,则将构成 `"example target | https://xxx/target"` 的等价形式.
+
+---
+
+以下介绍 Web Collections 的一种布置方法,即布置到一个 GitHub 存储库的 Pages,但这并不是唯一的布置方法.
 
 所用的工具是一个特定版本的 [Lore Web Collections Bin](https://crates.io/crates/lore-web-collections-bin-lexer-2026-04-07-1-impl-2026-04-07-2), 参考 [安装工具](./2_安装工具.md) 以安装.
 
